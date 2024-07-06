@@ -1,0 +1,88 @@
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pet Lar - Seu Bixinho em Casa</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style-login.css" />
+    <link rel="stylesheet" href="./css/style-telas.css">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <header class="cabecalho">
+    <nav class="menu">
+        <ul class="ul-menu">
+        <a href="login.html">
+            <li id="image-usuario"><i class="bi bi-person-badge-fill    "></i></li>
+        </a>
+
+        <li id="image-localizacao">
+            <i class="bi bi-geo-alt"></i>
+            <input id="cep" type="text" placeholder="Digite seu CEP">
+            <p class="nome-localizacao"></p>
+            <button onclick="consultaEndereco()">OK</button>
+        </li>
+
+        <li class="logo-empresa">
+            <i class="bi bi-card-image"></i>
+        </li>
+        </ul>
+    </nav>
+    </header>
+    
+    <section class="secao-login">
+        <h1 id="nome-empresa">CADASTRO DE CLIENTE</h1> 
+        <section id="mensagemCadUser-ok" class="mensagem-ok"></section>       
+            <div class="login-senha">
+                <label for="" class="login">NOME</label>
+                <input type="text" class="input" id="inputNome" placeholder="Informe seu nome">
+
+                <label for="" class="login">E-MAIL</label>
+                <input type="email" class="input" id="inputEmail" placeholder="Informe seu e-mail">
+
+                <label for="" class="login">SENHA</label>
+                <input type="password" class="input" id="inpuSenha" placeholder="Informe sua senha">
+
+                <label for="" class="login">ENDEREÇO</label>
+                <input type="text" class="input" id="inputEndereco" placeholder="Informe seu endereço">
+
+                <label for="" class="login">PRODUTOS MAIS PEDIDOS</label>
+                <input type="text" class="input" id="inputProdutosPed" placeholder="Informe os produtos mais pedidos">
+
+                <button class="botao" id="botaoCadUser">INCLUIR USUÁRIO</button>
+            </div>
+    </section>    
+
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="index.html">
+                <li id="footer-item">
+                    <i class="bi bi-house-fill"></i>
+                    <p class="footer-name-item">HOME - PET LAR</p>
+                </li>
+            </a>
+            <a href="cadastrar_usuario.html">
+                <li id="footer-item">
+                    <i class="bi bi-emoji-smile"></i>
+                    <p class="footer-name-item">PET LAR - PERFIL</p>
+                </li>
+            </a>
+            <a href="cadastrar_produto.html">
+                <li id="footer-item">
+                    <i class="bi bi-upc-scan"></i>
+                    <p class="footer-name-item">PET LAR - PROMOÇÕES</p>
+                </li>
+            </a>
+            <a href="carrinho.html">
+                <li id="footer-item">
+                    <i class="bi bi-cart"></i>
+                    <p class="footer-name-item">PET LAR - PEDIDOS</p>
+                </li>
+            </a>
+        </ul>
+    </footer>
+    <script src="./js/script-principal.js"></script>
+    <script src="./js/cadastro-usuario.js"></script>
+</body>
+</html>
