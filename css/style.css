@@ -1,0 +1,232 @@
+section#mensagens-inicio {
+    padding: 2rem;
+    background-color: var(--background-clear);
+  }
+  
+  #nome-empresa {
+    font-style: bold;
+    margin-bottom: 0.5rem;
+    font-size: 50px;
+    color: var(--cor-empresa);
+  }
+  
+  .mensagem {
+    color: cadetblue;
+    font-size: 25px;
+  }
+
+  #input {
+    display: flex;
+    padding-top: .5rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+  }
+  
+  i.bi-search {
+    position: absolute;
+    color: var(--cor-empresa);
+    padding-top: 0.2rem;
+    padding-left: 5rem;
+    margin-right: 2rem;
+    font-size: 40px;
+  }
+  
+  #input-text {
+    margin: auto;
+    font-size: 25px;
+    width: 90%;
+    padding: 1.2rem 0 1.2rem;
+    padding-left: 4rem;
+    border: 2mm ridge rgba(19, 100, 24, 0.943);
+    text-align: left;
+  }
+  
+  input:focus {
+    outline: 0;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: grey;
+    padding: 2rem;
+  }
+  
+  #categorias {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #categoria-ul {  
+    display: flex; 
+    justify-content: center;
+  }
+  
+  li.categoria{
+    margin: auto;
+  }
+  
+  .a-categoria{
+    justify-content: center;
+    text-decoration: none;
+    margin: 3rem 5rem;
+  }
+  
+  .categoria{
+    color: rgba(14, 97, 138, 0.868);
+    border: solid 1px var(--cor-empresa);
+    border-radius: 2rem;
+    width: 90%;
+    padding: 2rem;
+    margin: 1.2rem;
+    font-weight: 300;
+    transition: transform 0.6s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+    text-align: center;
+  }
+  .categoria:hover {
+    background-color: var(--cor-empresa);
+    border: 5px solid rgb(8, 132, 60);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  }
+
+  #cards {
+    display: flex;
+  }
+  
+  .card {
+    display: block;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    align-content: center;
+  
+  }
+  .card:hover {
+    box-shadow: inset 10px 10px 10px 5px;
+    color: rgb(9, 84, 44);
+  }
+  
+  .card img{
+    display: block;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+  }
+  
+  h3.nome-produto-card {
+    display: flex;
+    margin-top: 30px;
+    font-size: 20px;
+    justify-content: center;
+    color: rgb(7, 88, 20);
+    font-size: 20px;
+    margin-bottom: 1.3rem;
+  }
+  
+  #ver-mais {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+    font-size: 30px;
+    margin-right: 2rem;
+  }
+  
+  #ver-mais a{
+    color: grey;
+    text-decoration: none;
+    margin: .8rem 2rem;
+  }
+  
+  #avaliacao {
+    text-align: center;
+    border: 0.5rem outset orange;
+    outline: 0.5rem solid khaki;
+    box-shadow: 0 0 0 2rem gray;
+    border-radius: 12px;
+    font: bold 1rem sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+    width: 50%;
+    margin: auto;
+  }
+  
+  #titulo-avaliacao {
+    font-size: 40px;
+    color: var(--cor-empresa);
+    text-shadow: 2px 2px black;
+  }
+  
+  .bi-hand-thumbs-up {
+    font-size: 40px;
+    color: var(--cor-empresa);
+    text-shadow: 2px 2px black;  
+  }
+  
+  .bi-hand-thumbs-down {
+    font-size: 40px;
+    color: var(--cor-empresa);
+    text-shadow: 2px 2px black;
+  }
+  
+  #frase-avaliacao {
+    font-size: 30px;
+    color: gray;
+    padding: 1.2rem;
+  }
+  
+  @media screen and (max-width: 480px){
+    body{
+      width: 100%;
+    }
+  
+    #input-text{
+      width: 70%;
+    }
+  
+    i.bi-search {
+      position: absolute;
+      color: var(--cor-empresa);
+      padding-top: 0.2rem;
+      padding-left: 3rem;
+      margin-right: 1rem;
+      font-size: 30px;
+    }
+  
+    #input-text {
+      margin: auto;
+      font-size: 17px;
+      width: 90%;
+      padding: 1.2rem 0 1.2rem;
+      padding-left: 4rem;
+      border: 2mm ridge rgba(19, 100, 24, 0.943);
+      text-align: left;
+    }   
+  
+  #categoria-ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+  
+    .a-categoria{
+      display: flex;
+    }
+    
+    section#cards{
+      flex-wrap: wrap;
+      margin: auto;
+    }
+  
+    div.card{
+      width: 100%
+    }
+  
+   span#frase-avaliacao{
+    display: none;
+    }  
+  }  
